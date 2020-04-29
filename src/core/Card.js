@@ -30,8 +30,7 @@ const Card = ({
       addToCart && (
         <button
           onClick={addProductToCart}
-          className="btn btn-block rounded btn-success mt-2 mb-2"
-        >
+          className="btn btn-block rounded btn-success mt-2 mb-2">
           Add to Cart
         </button>
       )
@@ -46,8 +45,7 @@ const Card = ({
             removeItemFromCart(product._id);
             setReload(!reload);
           }}
-          className="btn btn-block btn-danger rounded mt-2 mb-2"
-        >
+          className="btn btn-block btn-danger rounded mt-2 mb-2">
           Remove
         </button>
       )
@@ -72,7 +70,7 @@ const Card = ({
     );
   };
   return (
-    <div className="card text-white border border-white">
+    <div className="text-dark border-0">
       <div className="card-body">
         <ImageHelper product={product} />
         {/* <h5 className="card-title">{cardTitle}</h5> */}

@@ -14,8 +14,7 @@ const Menu = ({ history }) => {
   return (
     <nav
       style={currentTab(history, "/")}
-      className="navbar  navbar-expand-sm navbar-dark bg-dark"
-    >
+      className="navbar  navbar-expand-sm navbar-dark bg-dark">
       <div className="container text-uppercase p-2">
         <Link className="nav-link navbar-brand" to="/">
           Rk Furniture
@@ -23,8 +22,7 @@ const Menu = ({ history }) => {
         <button
           className="navbar-toggler"
           data-toggle="collapse"
-          data-target="#navbarNav"
-        >
+          data-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse text-center" id="navbarNav">
@@ -33,8 +31,7 @@ const Menu = ({ history }) => {
               <Link
                 style={currentTab(history, "/")}
                 className="nav-link"
-                to="/"
-              >
+                to="/">
                 Home
               </Link>
             </li>
@@ -42,8 +39,7 @@ const Menu = ({ history }) => {
               <Link
                 style={currentTab(history, "/cart")}
                 className="nav-link"
-                to="/cart"
-              >
+                to="/cart">
                 Cart
               </Link>
             </li>
@@ -52,8 +48,7 @@ const Menu = ({ history }) => {
                 <Link
                   style={currentTab(history, "/admin/dashboard")}
                   className="nav-link"
-                  to="/admin/dashboard"
-                >
+                  to="/admin/dashboard">
                   A. Dashboard
                 </Link>
               </li>
@@ -62,8 +57,7 @@ const Menu = ({ history }) => {
               <Link
                 style={currentTab(history, "/service")}
                 className="nav-link"
-                to="/service"
-              >
+                to="/service">
                 Services
               </Link>
             </li>
@@ -73,8 +67,7 @@ const Menu = ({ history }) => {
                   <Link
                     style={currentTab(history, "/register")}
                     className="nav-link"
-                    to="/register"
-                  >
+                    to="/register">
                     Register
                   </Link>
                 </li>
@@ -82,8 +75,7 @@ const Menu = ({ history }) => {
                   <Link
                     style={currentTab(history, "/login")}
                     className="nav-link"
-                    to="/login"
-                  >
+                    to="/login">
                     Login
                   </Link>
                 </li>
@@ -97,8 +89,7 @@ const Menu = ({ history }) => {
                     logout(() => {
                       history.push("/");
                     });
-                  }}
-                >
+                  }}>
                   Logout
                 </span>
               </li>
